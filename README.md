@@ -4,13 +4,48 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Resti Test Task
 
-A few resources to get you started if this is your first Flutter project:
+This is a simple News Feed App that allows users to scroll through posts and like them. The likes are stored locally on the device using SharedPreferences. The app follows Clean Architecture principles, uses Dependency Injection, and includes State Management and tests.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Display a list of news posts fetched from a sample API.
+- Like a post.
+- Persist liked posts locally using SharedPreferences.
+
+## Architecture
+
+The app is structured following Clean Architecture principles:
+
+- **Presentation Layer**: Contains the UI and state management logic.
+- **Domain Layer**: Contains business logic and entities.
+- **Data Layer**: Contains data sources and repositories.
+
+## State Management
+
+The app uses the Provider package for state management.
+
+## Testing
+
+The app includes both unit and widget tests:
+
+- Unit tests for business logic.
+- Widget tests for UI components.
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone git@github.com:YernurBeisenbek/resti_test_task.git
+   cd resti_test_task
+   git checkout master
+
